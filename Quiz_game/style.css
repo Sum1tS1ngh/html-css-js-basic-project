@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgba(188, 229, 229, 0.796);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+.container {
+  background: white;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 30px 10px rgba(219, 214, 214, 0.444);
+  overflow: hidden;
+  position: relative;
+}
+.screen {
+  display: none;
+  padding: 2rem;
+  text-align: center;
+}
+.screen.active {
+  display: block;
+}
+/* start screen*/
+
+#start_screen h1 {
+  color: red;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+#start_screen p {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* quiz screnn*/
+
+#question {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+#question_info {
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+  margin-bottom: 2rem;
+}
+.option_container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+.option_btn {
+  background-color: rgba(239, 184, 184, 0.434);
+  color: #333;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: left;
+  cursor: pointer;
+}
+.option_btn:hover {
+  background-color: rgba(239, 184, 184, 0.701);
+  border-color: rgba(69, 44, 44, 0.656);
+}
+.option_btn.correct {
+  background-color: rgba(210, 239, 184, 0.699);
+  color: green;
+}
+.option_btn.incorrect {
+  background-color: rgba(255, 0, 0, 0.336);
+  color: rgb(255, 0, 0);
+}
+.progress_bar {
+  height: 12px;
+  background-color: rgba(244, 226, 226, 0.992);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+#progress {
+  height: 100%;
+  width: 0%;
+  background-color: rgb(255, 89, 0);
+  transition: width 0.3s ease;
+}
+
+/* reslt page*/
+#result_screen h1 {
+  font-size: 2.5rem;
+  color: tomato;
+  margin-bottom: 2rem;
+}
+#result_info {
+  background: rgb(255, 223, 228);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+}
+#result_info p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+#result_message {
+  color: tomato;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+button {
+  padding: 15px 30px;
+  background-color: tomato;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+button:hover {
+  background-color: rgba(255, 99, 71, 0.622);
+}
+
+/*for phone or other screen */
+@media (max-width: 500px) {
+  #start_screen h1 {
+    font-size: 1.5rem;
+  }
+
+  #question {
+    font-size: 1rem;
+  }
+  #result_screen h1 {
+    font-size: 1.5rem;
+  }
+  button {
+    font-size: 1rem;
+  }
+  #result_message {
+    font-size: 1.2rem;
+  }
+}

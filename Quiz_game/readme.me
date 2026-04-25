@@ -1,0 +1,63 @@
+# Quiz Game Project
+
+This is a simple web-based Quiz Game made using **HTML, CSS, and JavaScript**.
+
+## How This Project Works
+
+When the user opens the app, the quiz starts from a welcome page.  
+The user clicks **Start Quiz**, answers multiple-choice questions one by one, and finally sees the score and result message.
+
+The app automatically:
+- selects a random number of questions (between 5 and 14),
+- shows one question at a time,
+- checks if the selected answer is correct,
+- updates score and progress bar,
+- shows final result at the end.
+
+## Number of Screens
+
+This project has **3 screens**:
+
+1. **Start Screen**
+   - Title and short text
+   - `Start Quiz` button
+
+2. **Quiz Screen**
+   - Current question
+   - Question number and total questions
+   - Current score
+   - Multiple answer options
+   - Progress bar
+
+3. **Result Screen**
+   - Final score
+   - Performance message (Perfect, Great, Good, etc.)
+   - `Restart Quiz` button
+
+## Main Functions in JavaScript
+
+- **`start_quiz()`**
+  - Resets score and question index
+  - Hides start screen and opens quiz screen
+  - Calls `showQuestion()`
+
+- **`showQuestion()`**
+  - Displays current question and options
+  - Updates progress bar
+  - Handles answer click and checks correct/incorrect
+  - Moves to next question or result screen
+
+- **`resultPage()`**
+  - Calculates percentage
+  - Shows final score and message
+  - Switches from quiz screen to result screen
+
+- **`restart_quiz()`**
+  - Hides result screen
+  - Starts quiz again by calling `start_quiz()`
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript (Vanilla JS)
