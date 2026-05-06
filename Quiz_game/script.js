@@ -391,7 +391,6 @@ function showQuestion() {
   quizQuestions[current_question].answers.forEach((answer) => {
     const button = document.createElement("button");
     button.textContent = answer.text;
-    console.log(answer.correct);
     button.dataset.correct = answer.correct; // Fixed spacing for consistency
 
     button.classList.add("option_btn");
@@ -414,6 +413,7 @@ function showQuestion() {
     }
     setTimeout(() => {
       if (current_question_no + 1 < totalQuestion) {
+        // why current + 1
         current_question_no++;
         current_question++;
         showQuestion();
