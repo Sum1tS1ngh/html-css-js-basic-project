@@ -4,6 +4,7 @@ const card = document.querySelector(".card");
 const APIKEY = "ae08ffe455dc787ac20e38a85fdf7db9";
 let city;
 
+
 inputform.addEventListener("submit", async (event) => {
   event.preventDefault();
   city = cityInput.value.trim();
@@ -104,3 +105,9 @@ function errorDisplayFn(message) {
   card.style.display = "flex";
   card.appendChild(errorDisplay);
 }
+async function funDefault(){
+  const value=await getweather("patna")
+   infoDisplay(value);
+}
+funDefault();
+
