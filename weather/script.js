@@ -1,9 +1,8 @@
 const cityInput = document.querySelector(".enterCity");
 const inputform = document.querySelector(".inputform");
 const card = document.querySelector(".card");
-const APIKEY = "ae08ffe455dc787ac20e38a85fdf7db9";
+const APIKEY = "ae08ffe455dc787ac20e38a85fdf7db9"; // fell free to use your own API key from openweathermap.org
 let city;
-
 
 inputform.addEventListener("submit", async (event) => {
   event.preventDefault();
@@ -105,9 +104,8 @@ function errorDisplayFn(message) {
   card.style.display = "flex";
   card.appendChild(errorDisplay);
 }
-async function funDefault(){
-  const value=await getweather("patna")
-   infoDisplay(value);
+async function funDefault() {
+  const value = await getweather("patna");
+  infoDisplay(value);
 }
 funDefault();
-
