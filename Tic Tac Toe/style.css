@@ -1,0 +1,79 @@
+
+body{
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center; 
+margin-top: 50px;
+
+}
+.matrix{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+width: 450px;
+
+
+}
+.box{
+width: 150px;
+height: 150px;
+background-color: rgb(201, 229, 255);
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 24px;
+border: 1px solid ;
+border-color:rgb(27, 4, 95) ;
+box-sizing: border-box;   
+font-weight: bold;
+font-size: 6rem;
+color: rgb(0, 0, 0);
+
+}
+#result{
+font-size: 3rem;
+display: flex;
+justify-content: center;
+align-items: baseline;
+color: rgb(255, 5, 5);
+
+}
+.score{
+margin-top: 2px; 
+color: black;
+padding: 15px 40px;
+border-radius: 10px;
+font-size: 2rem;
+}
+#restart{
+color: rgb(222, 222, 222);
+background-color: rgb(68, 196, 45);
+padding: 10px 15px;
+font-size: larger;
+border: 1px solid;
+border-radius: 50px;
+}
+#overpage{
+position: fixed;
+top: 0%;
+width: 100%;
+height: 100%;
+background-color: rgba(209, 217, 220, 0.535);
+display: none;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+color: white;
+}
+
+#play_again{
+color: rgb(222, 222, 222);
+background-color: rgb(68, 196, 45);
+padding: 10px 15px;
+font-size: larger;
+border: 1px solid;
+border-radius: 50px;
+
+}
